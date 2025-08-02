@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS builder
 WORKDIR /app
 COPY *.csproj .
 RUN dotnet restore
